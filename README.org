@@ -1,0 +1,5 @@
+* dynoplot
+** Dependencies
+   Required OpenCV 4.2
+   On Ubuntu install the following packagees:
+   - ~python3-opencv~
