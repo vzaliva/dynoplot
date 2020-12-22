@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>    
+</head>
+
+<body>
+  <script>
+
+    function parseFloat(s)
+    {
+        return (s=='' ? NaN : +s)
+    };
+    
+    d3.csv("data/2018 Kawasaki Z650.csv")
+    .row(function(d) {
+        return {
+            hp_rpm     : parseFloat(d.hp_rpm     ),
+            hp         : parseFloat(d.hp         ),
+            torque_rpm : parseFloat(d.torque_rpm ),
+            torque     : parseFloat(d.torque     )
+        };
+    })
+    .get(function(error, rows) { console.log(rows); });
+  </script>
+  
+</body>
+
+</html>

@@ -1,3 +1,7 @@
 * dynoplot
 ** Digitize with
    https://apps.automeris.io/wpd/
+** Developement
+   In Firefox for local debugging toggle "privacy.file.unique.origin"
+   in "about:config".
+   
